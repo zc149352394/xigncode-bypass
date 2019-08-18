@@ -10,17 +10,19 @@
 
 - 将整个文件夹 存放到目录 \teraProxy\mod\
 
-![screenshot](https://github.com/zc149352394/xigncode-bypass-bypass-toolbox/blob/master/screenshot/01.png)
+![screenshot](https://github.com/zc149352394/xigncode-bypass-toolbox/blob/master/screenshot/01.png)
 
-![screenshot](https://github.com/zc149352394/xigncode-bypass-bypass-toolbox/blob/master/screenshot/02.png)
+![screenshot](https://github.com/zc149352394/xigncode-bypass-toolbox/blob/master/screenshot/02.png)
 
-![screenshot](https://github.com/zc149352394/xigncode-bypass-bypass-toolbox/blob/master/screenshot/03.png)
+- 此时启动TERA客户端右下角 已无 Xigncode3 启动提示
 
-![screenshot](https://github.com/zc149352394/xigncode-bypass-bypass-toolbox/blob/master/screenshot/04.png)
+![screenshot](https://github.com/zc149352394/xigncode-bypass-toolbox/blob/master/screenshot/03.png)
 
-!! 等待Tera客户端后台进程完全结束, 并出现如下提示(恢复这2个文件)
+![screenshot](https://github.com/zc149352394/xigncode-bypass-toolbox/blob/master/screenshot/04.png)
 
-![screenshot](https://github.com/zc149352394/xigncode-bypass-bypass-toolbox/blob/master/screenshot/05.png)
+- 等待Tera客户端后台进程完全结束, 并出现如下提示(恢复这2个文件)
+
+![screenshot](https://github.com/zc149352394/xigncode-bypass-toolbox/blob/master/screenshot/05.png)
 
 # 更新支持版本:
 
