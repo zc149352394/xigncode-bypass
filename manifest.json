@@ -2,8 +2,9 @@
     "files": {
         "bak/x3.xem": "1ea2eaf64e85314e0b2eb43fed18b172c601fec991eb452b4d591d279a997339",
         "bak/xcorona.xem": "54d716949719db6e30f798ba80ef8be19f1bd0a37ce109c0bea981fc62062097",
-        "index.js": "bdf96bdb3f461fb082f3c743456debfef58006106b4c712dfed30d26c81d3e1d",
-        "module.json": "9a502000e26c3cc9106588ceca4bc57348dc16d54d851c1318215e1542b24271",
+        "index.js": "9d42d2f288d1d59cd77a21e0ba8975fc46644f0a3c877933f795258e8c62ce92",
+        "injector.exe": "e6b94c56ed73706a071033274ebcf893ce4371a9f2f2aa7dad013d10245e5a3c",
+        "module.json": "2f672ccc857bd0ee4f2a8453f4bc9e4329ddc4435245ede9e939a4b0d792b4f2",
         "process-listener.js": "e5e3683ffa53c6d3c6b30170e439b5aec8f283a545cbea48199f46a5e7aa43d7",
         "xigncode-bypass.dll": "f5d8b296e7892537dbc7b36dddf715e8738e41e4e151d4c51872137f9854e1fe"
     }

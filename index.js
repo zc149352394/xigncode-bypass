@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 const { execFileSync } = require('child_process');
 const ProcessListener = require("./process-listener");
 
@@ -15,6 +15,9 @@ module.exports = function XigncodeBypass(mod) {
         try {
             let XigncodeFolder = path.join(path.dirname(process.path), "XIGNCODE");
             PatchedProcesses[process.pid] = XigncodeFolder;
+            
+            // fs.copyFileSync(path.join(__dirname, "res/x3.xem"), path.join(XigncodeFolder, "x3.xem"));
+            // fs.copyFileSync(path.join(__dirname, "res/xcorona.xem"), path.join(XigncodeFolder, "xcorona.xem"));
             // console.log(`[bypass] Game client (PID ${process.pid}) detected, bypass installed.`);
         } catch(e) {
             // Ignore errors...
@@ -24,8 +27,9 @@ module.exports = function XigncodeBypass(mod) {
     function HandleRemovedProcess(pid) {
         try {
             let XigncodeFolder = PatchedProcesses[pid];
-                fs.copyFileSync(path.join(__dirname, "bak/x3.xem"), path.join(XigncodeFolder, "x3.xem"));
-                fs.copyFileSync(path.join(__dirname, "bak/xcorona.xem"), path.join(XigncodeFolder, "xcorona.xem"));
+            
+            fs.copyFileSync(path.join(__dirname, "bak/x3.xem"), path.join(XigncodeFolder, "x3.xem"));
+            fs.copyFileSync(path.join(__dirname, "bak/xcorona.xem"), path.join(XigncodeFolder, "xcorona.xem"));
             delete PatchedProcesses[pid];
             console.log(`[bypass] Game client (PID ${pid}) closed, bypass reverted.`);
         } catch(e) {
@@ -41,10 +45,9 @@ module.exports = function XigncodeBypass(mod) {
     } catch(e) {
         // Ignore errors...
     }
-    
     // Inject bypass DLL
     try {
-        execFileSync(path.join(path.dirname(require.resolve('tera-client-interface')), 'injector.exe'), [mod.clientInterface.info.pid, path.join(__dirname, 'xigncode-bypass.dll')]);
+        execFileSync(path.join(__dirname, 'injector.exe'), [mod.clientInterface.info.pid, path.join(__dirname, 'xigncode-bypass.dll')]);
         
         ProcessListener("TERA.exe", HandleAddedProcess, HandleRemovedProcess, 500);
         // console.log("[bypass] Ready, waiting for game client to be started!");
@@ -63,13 +66,15 @@ module.exports = function XigncodeBypass(mod) {
             }
             default: {
                 switch (e.status) {
-                    case 1: {
+                    case 1:
+                    {
                         mod.error('Bypass DLL injection unsuccessful. It has likely been blocked by your anti-virus.');
                         mod.error('> Make sure that TERA Toolbox is running with Administrator privileges!');
                         mod.error('> Disable/uninstall your anti-virus or whitelist TERA Toolbox and injector.exe!');
                         break;
                     }
-                    default: {
+                    default:
+                    {
                         mod.error('This is likely caused by your anti-virus interfering. Disable/uninstall it or whitelist TERA Toolbox.');
                         mod.error('Full error message:');
                         mod.error(e);
