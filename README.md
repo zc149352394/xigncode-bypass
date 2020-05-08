@@ -26,7 +26,7 @@
 
 # 更新支持版本:
 
-TeraToolbox.exe | .node
+TeraToolboxCLI.exe | .node
 --- | ---
 Node.js v10+ | processlist_node_x64_64.node, processlist_node_ia32_64.node
 Node.js v11+ | processlist_node_x64_67.node, processlist_node_ia32_67.node
@@ -34,7 +34,7 @@ Node.js v12+ | processlist_node_x64_72.node, processlist_node_ia32_72.node
 Node.js v13+ | processlist_node_x64_79.node [new]
 Node.js v14+ | processlist_node_x64_83.node [new]
 
-TeraToolboxCLI.exe | .node
+TeraToolbox.exe | .node
 --- | ---
 Electron v2.0+ | processlist_electron_x64_64.node, processlist_electron_ia32_64.node
 Electron v4.0+ | processlist_electron_x64_70.node, processlist_electron_ia32_70.node
