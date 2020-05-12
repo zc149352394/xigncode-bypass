@@ -36,7 +36,7 @@ Node.js v14+ | processlist_node_x64_83.node [new]
 
 TeraToolbox.exe | .node
 --- | ---
-Electron v2.0+ | processlist_electron_x64_64.node, processlist_electron_ia32_64.node
-Electron v4.0+ | processlist_electron_x64_70.node, processlist_electron_ia32_70.node
+Electron v4.0+ | processlist_electron_x64_64.node, processlist_electron_ia32_64.node
+Electron v5.0+ | processlist_electron_x64_70.node, processlist_electron_ia32_70.node
 Electron v6.0+ | processlist_electron_x64_73.node, processlist_electron_ia32_73.node
 Electron v8.0+ | processlist_electron_x64_76.node [new]
